@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head id="head">
+        <!-- Character encoding + viewport settings -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow">
+        <!-- Title & description -->
+        <title>Contact Us</title>
+        <meta name="description" content="Contact page">
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./img/kirby-favicon.png">
+        <!-- Fonts & CSS -->
+        <link href="./css/styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&family=VT323&display=swap=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <!-- JS & JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./js/custom-js.js"></script>
+        <script src="https://kit.fontawesome.com/36e897625c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Nav bar -->
+        <header id="header"></header>
+        <main>
+            <!-- Contact us -->
+            <section id="purple-theme">
+                <div class="grid title-image-grid parallax" id="purple-parallax">
+                    <div>
+                        <h1>CONTACT US</h1>
+                        <h2>HAVE QUESTIONS?</h2>
+                    </div>
+                    <div>
+                        <p>Please fill and submit the form below, or email us at info@kirbysdreamland.com</p>
+                    </div>
+                    <div>
+                        <form action="somephpfile.php" method="POST" id="contact-us-form" class="contact-form">
+                            <div>
+                                <input type="text"  name="name" autocomplete="off" required placeholder="Name">
+                                <input type="email"  name="email" autocomplete="off" required placeholder="Email">
+                                <textarea  autocomplete="off" rows="10" cols="50" placeholder="Message" name="message"></textarea>
+                                <input type="reset" value="Clear form" id="clear-form">
+                                <button type="submit" form="contact-us-form" value="Submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+</html>
